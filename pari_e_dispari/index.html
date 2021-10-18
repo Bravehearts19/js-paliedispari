@@ -29,32 +29,31 @@
     <main>
         <div class="container">
             <div class="center_container">
-                <form action="">
-                    <div class="row row-cols-3">
-                        <div class="col">
-                            <select class="form-select" name="user_choice" id="user_choice" aria-label="Default select example">
-                                <option selected>Scegli pari o dispari</option>
-                                <option value="true">Pari</option>
-                                <option value="false">Dispari</option>
-                            </select>
-                        </div>
-        
-                        <div class="col">
-                            <select class="form-select" name="user_number" id="user_number" aria-label="Default select example">
-                                <option selected>Scegli il numero con cui vuoi giocare</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                            </select>
-                        </div>
-        
-                        <div class="col d-flex justify-content-center">
-                            <button type="submit" class="btn btn-primary mb-3">Gioca</button>
-                        </div>
+                <div class="row row-cols-3">
+                    <div class="col">
+                        <select class="form-select" name="user_choice" id="user_choice" aria-label="Default select example">
+                            <!-- <option selected>Scegli pari o dispari</option> -->
+                            <option value="pari" selected>Pari</option>
+                            <option value="dispari">Dispari</option>
+                        </select>
                     </div>
-                </form>
+    
+                    <div class="col">
+                        <select class="form-select" name="user_number" id="user_number" aria-label="Default select example">
+                            <!-- <option selected>Scegli il numero con cui vuoi giocare</option> -->
+                            <option value="0" selected>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+    
+                    <div class="col d-flex justify-content-center">
+                        <button id="play" class="btn btn-primary mb-3">Gioca</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
